@@ -1,0 +1,24 @@
+{
+
+"manifest_version": 2,
+"name": "Dockr",
+"version":"0.0.1",
+"description": "Google Dictionary",
+"icons": {
+	"128" : "img/icons.png",
+	"16" : "img/icons.png",
+	"48" : "img/icons.png"
+},
+"permissions": ["*://od-api.oxforddictionaries.com/api/v1/entries/*"],
+"content_scripts": [
+	{
+		"matches": ["*://od-api.oxforddictionaries.com/api/v1/entries/*"],
+		"js": ["googleCS.js"],
+		"run_at": "document_end"
+	}
+],
+		"browser_action" : {
+			"default_icon" : "img/icons.png",
+			"default_popup" : "popup.html"
+		}
+}

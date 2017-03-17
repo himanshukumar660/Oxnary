@@ -1,0 +1,19 @@
+{
+  "name": "chrome-search-extension",
+  "version": "0.1.0",
+  "description": "Searches FTP servers over the web for music, videos, eBooks and other content.",
+  "main": "popup.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/himanshukumar660/Dockr"
+  },
+  "keywords": [
+    "chrome",
+    "extension"
+  ],
+  "author": "Himanshu Kumar",
+  "bugs": {
+    "url": "https://github.com/himanshukumar660/Dockr/issues"
+  },
+  "homepage": "https://github.com/himanshukumar660/Dockr#readme"
+}

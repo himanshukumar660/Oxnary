@@ -1,0 +1,97 @@
+<html lang="en">
+
+<head>
+
+    <title>Dictionary</title>
+    <!-- Font Awesome -->
+    <link href="css/popup.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--Card image-->
+    <div id="search_box" style="display:inline-flex">
+        <div>
+            <input type="text" id="form"></input>
+        </div>
+        <div>
+            <button type="button" id="search">Define</button>
+        </div>
+    </div>
+
+    <!--/.Card image-->
+
+    <!--Card content-->
+    <div class="query_block">
+
+      <div id="no_result">
+      </div>
+
+        <div style="display:inline-flex">
+            <div id="heading1"></div>
+            <div id="mera_btn" style="background-color:none"></div>
+        </div>
+        <div id="query_result" style="line-height:20px;border-bottom-width:10px;"></div>
+    </div>
+
+    <!-- /Start your project here-->
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+    <script src="js/popup.js"></script>
+</body>
+
+</html>
+<!--
+function submit() {
+    var url1_start = "http://api.wordnik.com/v4/word.json/";
+    var qry = document.getElementById('form1').value;
+    var url1_def = "/definitions";
+    var url1_pron = "/pronunciations";
+    var url1_audio = "/audio";
+    var url1_end = "?limit=10&includeRelated=false&useCanonical=false&includeTags=false&api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5";
+    var url_def = url1_start + qry + url1_def + url1_end;
+    var url_pron = url1_start + qry + url1_pron + url1_end;
+    var url_audio = url1_start + qry + url1_audio + url1_end;
+    if (Object.keys(data).length != 0) {
+
+      $.getJSON(url_def, function(data) {
+              document.getElementById('query_result').innerHTML = '<style = "margin-right:2%" >';
+              var all_prev = '' ;
+              for (i = 0;i < 2; i++) {
+                  all_prev = all_prev + data[i].text + '<br>';
+              }
+              document.getElementById('query_result').innerHTML = all_prev;
+        });
+
+      document.getElementById('result').style.display="block";
+      $.getJSON(url_pron, function(data) {
+          var pro = '';
+          if(data[0].raw.length!=0)
+            pro = data[0].raw
+            document.getElementById('heading1').innerHTML= pro;
+      });
+
+    $.getJSON(url_audio, function(data) {
+        var audio = new Audio(data[0].fileUrl);
+        document.getElementById('mera_btn').onmousedown = function() {
+            audio.play();
+        }
+      });
+  }
+  else {
+
+  }
+};
+
+document.getElementById('search').addEventListener('click', submit());
+
+document.onkeydown = function(){
+    if (window.event.keyCode == '13') {
+      submit();
+    }
+};
+
+-->
