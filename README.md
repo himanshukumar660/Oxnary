@@ -1,5 +1,5 @@
 # Oxnary
-An extension for Chrome that lets you search for meanings of the words that you come across internet. It uses simple API calls to OXFORD DICTIONARY.
+A Chrome browser extension for improving second-language vocabulary learning by making API calls to Oxford Dictionary API’s.
 
 ## Setup (Chrome)
 
