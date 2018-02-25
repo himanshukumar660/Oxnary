@@ -1,5 +1,5 @@
 # Oxnary
-A Chrome browser extension for improving second-language vocabulary learning by making API calls to Oxford Dictionary API’s.
+A Chrome browser extension for improving second-language vocabulary learning by making API calls to Oxford API's.
 
 ## Setup (Chrome)
 
